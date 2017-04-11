@@ -70,11 +70,7 @@
 </div>
 <script>
 	$(function(){
-		
 		imgChange();
-		
-		
-		
 		$('.banner-items-li-img').hover(function(e){
 			var img=$(this).attr('src');
 			switch(e.type){
@@ -86,8 +82,6 @@
 			}
 			$(this).attr('src',img);
 		});
-		
-		
 		function imgChange(){
 			var img=$("div[name='img']");
 			var i=0;

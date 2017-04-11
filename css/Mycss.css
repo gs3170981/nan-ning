@@ -1,4 +1,8 @@
 * { margin:0; padding:0;}ul{ list-style: none; }html{font-size: 14px;font-family: "微软雅黑";}
+img{vertical-align:bottom;}
+.bg-green{
+	background: #00a652;
+}
 .rel {
   position: relative;
 }.conter{

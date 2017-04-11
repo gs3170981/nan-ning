@@ -1,14 +1,12 @@
-
 <div>
 <!--{{include './banner/banner',data}}这样的方法传不进当前的值-->
 	<div class="banner"></div><!--这是一个banner-->
-	<div class="banner"></div><!--乡村旅游-->
-	<div class="banner"></div><!--最新动态-->
-	<div class="banner"></div><!--这是一个横着的东西-->
-	<div class="banner"></div><!--旅游预订-->
-	<div class="banner"></div><!--服务指南-->
-	<div class="banner"></div><!--美图欣赏-->
-	
+	<div class="tourism"></div><!--乡村旅游-->
+	<div class="dynamic"></div><!--最新动态-->
+	<div class="bar"></div><!--这是一个横着的东西-->
+	<div class="booking"></div><!--旅游预订-->
+	<div class="guide"></div><!--服务指南-->
+	<div class="appreciate"></div><!--美图欣赏-->
 </div>
 <script>
 	var data={
@@ -17,32 +15,42 @@
 		smail_left:'一年一度的南宁国际民歌艺术节享誉中外',
 		smail_right:'让南宁成为了“天下民歌眷恋的地方”',
 		src:'./img/index/logo_white.png',
-		bg_style:'background: url(../../JQ-智慧乡村-Demo/img/index/bg_black.png);opacity: 0.3;min-width:1200px;',
+		bg_style:'background: url(./img/index/bg_black.png);opacity: 0.3;min-width:1200px;',
 		items:[
 			{
 				title:'景区简介',
-				src:'../../JQ-智慧乡村-Demo/img/index/introduce.png'
+				src:'./img/index/introduce.png'
 			},{
 				title:'美图欣赏',
-				src:'../../JQ-智慧乡村-Demo/img/index/appreciate.png'
+				src:'./img/index/appreciate.png'
 			},{
 				title:'旅游预订',
-				src:'../../JQ-智慧乡村-Demo/img/index/personal.png'
+				src:'./img/index/personal.png'
 			},{
 				title:'个人中心',
-				src:'../../JQ-智慧乡村-Demo/img/index/introduce.png'
+				src:'./img/index/introduce.png'
 			}
 		],
 		imgList:[
 			{
-				src:'../../JQ-智慧乡村-Demo/img/index/banner01.jpg'
+				src:'./img/index/banner01.jpg'
 			},{
-				src:'../../JQ-智慧乡村-Demo/img/index/banner01.jpg'
+				src:'./img/index/banner01.jpg'
 			},{
-				src:'../../JQ-智慧乡村-Demo/img/index/banner01.jpg'
+				src:'./img/index/banner01.jpg'
 			}
 		]
 	};
 	var str = template('./banner/banner', data);
     $('.banner').html(str);
+    
+    
+    var data={
+		title:'武鸣县大皇后村荣获全国"民主法制示范村"称号',
+		bottom:'去看看',
+		src:'./img/index/bar.png',
+		bg_style:'background: url(./img/index/bg_black.png);opacity: 0.5;min-width:1200px;',
+	};
+	var str = template('./indexMid/bar', data);
+    $('.bar').html(str);
 </script>
