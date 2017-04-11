@@ -1,0 +1,23 @@
+.main{
+	background: white;
+}.row{
+	padding: 32px 0;
+}.row-right{
+	line-height: 56px;
+	margin-left: 16px;
+}.row-title{
+	font-size: 28px;
+}.row-items{
+	margin-left: 82px;
+}.row-items-li{
+	padding: 0 20px;
+}.row-items-li-a:hover{
+	color: #00a652;
+	border-bottom: 2px solid #00a652;
+}.row-right-span{
+	padding: 0 20px;
+}.row-right-i{
+	padding-right: 5px;
+}.row-right-smail{
+	padding-right: 5px;
+}

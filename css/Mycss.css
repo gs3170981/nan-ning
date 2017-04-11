@@ -1,0 +1,134 @@
+* { margin:0; padding:0;}ul{ list-style: none; }html{font-size: 14px;font-family: "微软雅黑";}
+.rel {
+  position: relative;
+}.conter{
+	width: 1200px;
+	margin: 0 auto;
+}.zindex1{
+	z-index: 1;
+}.zindex2{
+	z-index: 2;
+}
+.w_100b{
+	width:100%;
+}
+.h_100b{
+	height:100%;
+}
+.ceshi{
+  border: 0.1px solid red;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+a:link {
+text-decoration: none;
+}
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+a:active {
+text-decoration: none;
+}
+.abs{
+  position: absolute;
+}
+.hand{
+  cursor: pointer;
+}
+.toum05{
+	background-color:rgba(255,255,255,0.5);
+}
+.toum-hei{
+	background:rgba(0,0,0,0.15);
+}
+.toum08{
+	background-color:rgba(255,255,255,0.8);
+}
+.black{
+	color: black;
+}
+.green{
+	color: #00a652;
+}
+.black1{
+	color: #aaaaaa;
+}
+.white{
+	color: white;
+}.hui{
+	color: #aaaaaa;
+}
+.bg-white{
+	background-color: white;
+}
+.none{
+	display: none;
+}
+.bold{
+	font-weight: bold;
+}
+.fg-hui{
+  box-shadow:0 0 3rem #b7c0c1;
+}
+.uof {
+  overflow: hidden;
+}
+.uc-a1 {
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem
+}
+.uc-a3 {
+  -webkit-border-radius: 50%;
+  border-radius: 50%
+}
+.uc-a2 {
+  -webkit-border-radius: 1rem;
+  border-radius: 1rem
+}
+.uts1{
+	text-shadow: 0.3rem 0.2rem 0.2rem black;
+}
+.uts-box1{
+	box-shadow: 0.3rem 0.5rem 0.5rem black;
+}
+.bg-blue{
+	background: #57a2ff;
+}
+.bg-red{
+	background: #eb4f38;
+}
+.bg-hei{
+	background: #1c2c39;
+}
+.uinput input, .uinput textarea {
+	margin: 0px;
+	border: 0px;
+	width: 100%;
+	height: 100%;
+	-webkit-appearance: none;
+	background: none;
+	text-decoration: none;
+	display: block;
+}
+.uinput textarea {
+  min-height: 5em;
+}
+.bg-toum{
+	background-color: transparent;
+}
+.tx-c{
+  text-align: center;
+}
+.xf{
+	position: fixed;
+}
+.clearF{/*解决浮动无高*/
+	overflow: hidden;
+}

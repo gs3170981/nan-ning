@@ -1,0 +1,106 @@
+<style>
+	.banner{
+		height: 800px;
+	}.banner-img,.banner-ul{
+		min-width: 1200px;
+	}.banner-ul{
+		color: white;
+		font-family: "仿宋";
+	}.banner-h2{
+		margin-top: 261px;
+		font-size: 40px;
+	}.banner-h1{
+		margin-top: 35px;
+		line-height: 107px;
+		font-size: 54px;
+		font-family: "黑体";
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		width: 1000px;
+		margin-left: 100px;
+	}.banner-smail{
+		font-size: 29px;
+		margin-top: 38px;
+		width: 1000px;
+		margin-left: 130px;
+		line-height: 48px;
+	}.banner-smail-img{
+		padding: 0 30px;
+		width: 52px;
+	}.banner-items{
+		margin-top: 122px;
+		font-family: "微软雅黑";
+		margin-left: 350px;
+	}.banner-items-li{
+		margin-left: 48px;
+	}.banner-items-li-title{
+		margin-top: 10px;
+	}.banner-items-li-img{
+		border: none;
+	}
+</style>
+<div class="banner rel">
+	<div class="conter">
+		<ul class="banner-ul tx-c abs zindex2">
+			<li><h2 class="banner-h2">{{h2}}</h2></li>
+			<li><h1 class="banner-h1 tx-c">{{h1}}</h1></li>
+			<li class="banner-smail clearF">
+				<small class="left banner-smail-left">{{smail_left}}</small>
+				<img class="left banner-smail-img " src="{{src}}"></img>
+				<small class="left banner-smail-right">{{smail_right}}</small>
+			</li>
+			<li>
+				<ul class="clearF banner-items rel">
+					{{each items as value index}}
+						<li class="left banner-items-li rel">
+							<a href="#">
+								<img class="banner-items-li-img" src="{{value.src}}" />
+							</a>
+							<p class="banner-items-li-title">{{value.title}}</p>
+						</li>
+					{{/each}}
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="abs h_100b w_100b zindex1" style="{{bg_style}}"></div>
+	{{each imgList as value index}}
+		<div name='img' class="abs w_100b h_100b banner-img" style="background:url({{value.src}}) no-repeat center center;"></div>
+	{{/each}}
+</div>
+<script>
+	$(function(){
+		
+		imgChange();
+		
+		
+		
+		$('.banner-items-li-img').hover(function(e){
+			var img=$(this).attr('src');
+			switch(e.type){
+				case 'mouseenter':
+					img=img.substring(0,img.lastIndexOf('.png'))+'_org.png';
+					break;
+				default:
+					img=img.substring(0,img.lastIndexOf('_org'))+'.png';
+			}
+			$(this).attr('src',img);
+		});
+		
+		
+		function imgChange(){
+			var img=$("div[name='img']");
+			var i=0;
+			setInterval(function(){
+				if(i==img.length)i=0;
+				$(img).animate({
+					'opacity':0.2,
+				},700);
+				$(img[i]).animate({
+					'opacity':1,
+				},'slow');
+				i++;
+			},5000)
+		}
+	})
+</script>
