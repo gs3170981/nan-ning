@@ -45,12 +45,74 @@
     $('.banner').html(str);
     
     
-    var data={
+    data={
+		title:'乡村旅游',
+		items:[
+			{
+				title:'隆安龙虎山',
+				details:'是广西森林和野生动物类型综合自然保护区',
+				src:'./img/index/img01.jpg'
+			},{
+				title:'伊岭岩',
+				details:'一座典型的喀斯特岩溶洞',
+				src:'./img/index/img02.jpg'
+			},{
+				title:'宁明花山',
+				details:'已被列为世界文化遗产',
+				src:'./img/index/img03.jpg'
+			},{
+				title:'崇左左江石景林',
+				details:'石峰群落，奇形怪状，陡峭嶙峋。层艳叠彩',
+				src:'./img/index/img04.jpg'
+			},{
+				title:'德天瀑布',
+				details:'是亚洲第一、世界第四大跨国瀑布',
+				src:'./img/index/img05.jpg'
+			},{
+				title:'友谊关',
+				details:'为中国一类边贸口岸',
+				src:'./img/index/img06.jpg'
+			}
+		],
+		bottom:'查看详情',
+		src:'./img/index/wave.png',
+	};
+	str = template('./indexMid/tourism', data);
+    $('.tourism').html(str);
+    
+    
+    data={
+		
+	};
+	str = template('./indexMid/dynamic', data);
+    $('.dynamic').html(str);
+    
+    
+    data={
 		title:'武鸣县大皇后村荣获全国"民主法制示范村"称号',
 		bottom:'去看看',
 		src:'./img/index/bar.png',
 		bg_style:'background: url(./img/index/bg_black.png);opacity: 0.5;min-width:1200px;',
 	};
-	var str = template('./indexMid/bar', data);
+	str = template('./indexMid/bar', data);
     $('.bar').html(str);
+    
+    
+    data={
+		
+	};
+	str = template('./indexMid/booking', data);
+    $('.booking').html(str);
+    
+    data={
+		
+	};
+	str = template('./indexMid/guide', data);
+    $('.guide').html(str);
+    
+    data={
+		
+	};
+	str = template('./indexMid/appreciate', data);
+    $('.appreciate').html(str);
 </script>
